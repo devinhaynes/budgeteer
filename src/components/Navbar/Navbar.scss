@@ -1,0 +1,19 @@
+@use "../../styles/Color.scss" as c;
+
+.Navbar {
+  width: 100vw;
+
+  &__wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid c.$gray;
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+}

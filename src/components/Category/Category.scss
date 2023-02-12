@@ -1,0 +1,37 @@
+@use "../../styles/Color.scss" as c;
+
+.Category {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  tr:nth-last-child(1) {
+    td {
+      background-color: scale-color($color: c.$primary, $lightness: -30%);
+    }
+  }
+
+  th,
+  td {
+    border: 1px solid c.$primary;
+    padding: 0.5rem 1rem;
+  }
+
+  td {
+    background-color: c.$gray;
+
+    &:nth-last-child(1) {
+      text-align: right;
+    }
+  }
+
+  th {
+    background-color: white;
+    color: c.$primary;
+    font-weight: bold;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+}
